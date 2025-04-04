@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Personal Links</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Custom cursor elements -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Overlay for audio/video permission -->
+    <div id="overlay" class="overlay">
+        <div class="overlay-content">
+            <button id="clickMe">Click to Enter</button>
+        </div>
+    </div>
+
+    <!-- Background video -->
+    <div class="background">
+        <video id="bgVideo" loop>
+            <source src="" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- Main content -->
+    <div class="container">
+        <!-- Unified card with all content -->
+        <div class="profile-card">
+            <!-- Profile section -->
+            <div class="profile-header">
+                <div class="profile-img-container">
+                    <img id="profileImage" src="" alt="Profile Picture" class="profile-img">
+                </div>
+                <div class="profile-info">
+                    <div class="profile-name-container">
+                        <h1 id="profileName"></h1>
+                        <span class="verified-badge" id="verifiedBadge"><i class="fas fa-check"></i></span>
+                    </div>
+                    <p id="profileBio" class="profile-bio"></p>
+                    <p id="profileLocation" class="profile-location"></p>
+                </div>
+            </div>
+            
+            <!-- Social media links -->
+            <div class="social-links" id="socialLinks">
+                <!-- Will be populated by JavaScript -->
+            </div>
+            
+            <!-- Custom links now inside the card -->
+            <div class="custom-links" id="customLinks">
+                <!-- Will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Audio player -->
+    <audio id="bgAudio" loop>
+        <source src="" type="audio/mp3">
+    </audio>
+
+    <!-- Audio controls -->
+    <div class="audio-controls">
+        <button id="muteButton" class="control-btn">
+            <i class="fas fa-volume-up"></i>
+        </button>
+        <input type="range" id="volumeSlider" class="volume-slider" min="0" max="100" value="100">
+    </div>
+
+    <!-- Control buttons -->
+    <div class="controls">
+        <button id="themeButton" class="control-btn theme-btn">
+            <i class="fas fa-moon"></i>
+        </button>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p id="footerText"></p>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
