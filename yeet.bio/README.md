@@ -2,7 +2,7 @@
 
 A stylish and fully customizable personal link page with a modern design.
 
-![Personal Link Page Preview](https://placehold.co/600x400/8a43e2/ffffff?text=Personal+Link+Page+Preview)
+![Personal Link Page Preview](https://yeet.bio)
 
 ## Installation
 
