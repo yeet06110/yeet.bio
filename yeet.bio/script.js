@@ -334,8 +334,9 @@ function generateCustomLinks() {
         linkCard.rel = 'noopener noreferrer';
         linkCard.className = 'link-card';
         
-        // Check if icon is a URL (starts with http:// or https://)
-        if (link.icon && (link.icon.startsWith('http://') || link.icon.startsWith('https://'))) {
+        // Check if icon is a URL or a file path (starts with ./ or / or http:// or https://)
+        if (link.icon && (link.icon.startsWith('./') || link.icon.startsWith('/') || 
+                          link.icon.startsWith('http://') || link.icon.startsWith('https://'))) {
             // Create an image element for custom icon
             const iconImg = document.createElement('img');
             iconImg.src = link.icon;

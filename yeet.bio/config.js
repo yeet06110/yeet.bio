@@ -114,11 +114,11 @@ const config = {
             enabled: false
         },
         {
-            title: "X",
-            url: "https://twitter.com/yourusername",
-            icon: "./assets/x-icon.png",       // Example of custom icon
+            title: "website source code",
+            url: "https://github.com/yeet06110/yeet.bio",
+            icon: "./assets/github.png",       // Example of custom icon
             iconColor: "#a990ff",
-            enabled: false
+            enabled: true
         },
         {
             title: "My Shop",
