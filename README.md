@@ -2,7 +2,7 @@
 
 A stylish and fully customizable personal link page with a modern design.
 
-Personal Link Page Preview: https://yeet.bio
+[Personal Link Page Preview](https://yeet.bio)
 
 ## Installation
 
